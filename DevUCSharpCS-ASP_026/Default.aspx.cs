@@ -13,9 +13,17 @@ namespace DevUCSharpCS_ASP_026
         {
             string result = "";
 
-            for (int i = 0; i < 10; i++)
+            //for (int i = 0; i < 10; i++)
+            //{
+            //    result += i.ToString() + " | ";
+            //}
+            //resultLabel.Text = result;
+
+            //playing with values and operations
+            for (double i = 1; i <= 25; i*=1.25)
             {
                 result += i.ToString() + " | ";
+                
             }
             resultLabel.Text = result;
         }
