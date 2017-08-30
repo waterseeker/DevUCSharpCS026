@@ -28,16 +28,32 @@ namespace DevUCSharpCS_ASP_026
             //resultLabel.Text = result;
 
             //looping through an array
-            string[] names = new string[] { "Wolverine", "Cyclops", "Professor X", "Phoenix" };
+            //string[] names = new string[] { "Wolverine", "Cyclops", "Professor X", "Phoenix" };
 
-            //re-indexes the array, sorting alphabetically
-            Array.Sort(names);
-            //reverses the array
-            Array.Reverse(names);
+            ////re-indexes the array, sorting alphabetically
+            //Array.Sort(names);
+            ////reverses the array
+            //Array.Reverse(names);
+
+            //for (int i = 0; i < names.Length; i++)
+            //{
+            //    result += names[i] + " | ";
+            //}
+            //resultLabel.Text = result;
+
+
+            //using a break statement to exit the loop without having to loop through
+            //the entire data set, in this case the string array
+            string[] names = new string[] { "Wolverine", "Cyclops", "Professor X", "Phoenix" };
 
             for (int i = 0; i < names.Length; i++)
             {
-                result += names[i] + " | ";
+                if (names[i] == "Phoenix")
+                {
+                    result = String.Format("{0} is at index {1} in the list.", names[i], i);
+                    break;
+                }
+
             }
             resultLabel.Text = result;
         }
