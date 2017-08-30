@@ -20,10 +20,19 @@ namespace DevUCSharpCS_ASP_026
             //resultLabel.Text = result;
 
             //playing with values and operations
-            for (double i = 1; i <= 25; i*=1.25)
+            //for (double i = 1; i <= 25; i*=1.25)
+            //{
+            //    result += i.ToString() + " | ";
+
+            //}
+            //resultLabel.Text = result;
+
+            //looping through an array
+            string[] names = new string[] { "Wolverine", "Cyclops", "Professor X", "Phoenix" };
+
+            for (int i = 0; i < names.Length; i++)
             {
-                result += i.ToString() + " | ";
-                
+                result += names[i] + " | ";
             }
             resultLabel.Text = result;
         }
