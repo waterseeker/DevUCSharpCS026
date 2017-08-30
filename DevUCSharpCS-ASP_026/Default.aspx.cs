@@ -50,8 +50,12 @@ namespace DevUCSharpCS_ASP_026
             {
                 if (names[i] == "Phoenix")
                 {
-                    result = String.Format("{0} is at index {1} in the list.", names[i], i);
+                    result += String.Format("{0} is at index {1} in the list.", names[i], i);
                     break;
+                }
+                else
+                {
+                    result += String.Format("{0} wasn't at index {1}.<br />", "Phoenix", i);
                 }
 
             }
