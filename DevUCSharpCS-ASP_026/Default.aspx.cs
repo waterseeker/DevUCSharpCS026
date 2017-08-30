@@ -11,7 +11,13 @@ namespace DevUCSharpCS_ASP_026
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            string result = "";
 
+            for (int i = 0; i < 10; i++)
+            {
+                result += i.ToString() + " | ";
+            }
+            resultLabel.Text = result;
         }
     }
 }
