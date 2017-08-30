@@ -30,6 +30,11 @@ namespace DevUCSharpCS_ASP_026
             //looping through an array
             string[] names = new string[] { "Wolverine", "Cyclops", "Professor X", "Phoenix" };
 
+            //re-indexes the array, sorting alphabetically
+            Array.Sort(names);
+            //reverses the array
+            Array.Reverse(names);
+
             for (int i = 0; i < names.Length; i++)
             {
                 result += names[i] + " | ";
